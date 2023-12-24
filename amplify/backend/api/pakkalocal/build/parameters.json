@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "pakkalocal",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-pakkalocal-staging-64836-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/db0a74a078d12ac5cc4f4299cc6cc8a3dbce6689"
+}

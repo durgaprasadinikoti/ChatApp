@@ -1,0 +1,87 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pakkalocal-staging-64836-authRole",
+      "UnauthRoleArn": "arn:aws:iam::526028915276:role/amplify-pakkalocal-staging-64836-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::526028915276:role/amplify-pakkalocal-staging-64836-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-pakkalocal-staging-64836-deployment",
+      "UnauthRoleName": "amplify-pakkalocal-staging-64836-unauthRole",
+      "StackName": "amplify-pakkalocal-staging-64836",
+      "StackId": "arn:aws:cloudformation:us-east-1:526028915276:stack/amplify-pakkalocal-staging-64836/6c1ac0b0-3e5c-11ee-a133-0e244248268f",
+      "AmplifyAppId": "d2ykklh9zdni7h"
+    }
+  },
+  "auth": {
+    "pakkalocal": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-east-1_T5tN1clm3",
+        "AppClientIDWeb": "4b6eou3e375ofbhljsm9mqa84b",
+        "AppClientID": "7hlop5jp79im48bua3h31d81di",
+        "IdentityPoolId": "us-east-1:480f65bb-9bda-4ed7-8287-774ee82d021f",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:526028915276:userpool/us-east-1_T5tN1clm3",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "pakkalocal"
+      },
+      "lastPushTimeStamp": "2023-08-21T05:04:58.098Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-pakkalocal-staging-64836-deployment/amplify-cfn-templates/auth/pakkalocal-cloudformation-template.json",
+        "logicalId": "authpakkalocal"
+      }
+    }
+  },
+  "api": {
+    "pakkalocal": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "bxyptlu5zrbavgjmklabcxrwoy",
+        "GraphQLAPIEndpointOutput": "https://eudwzkj7fjaj7jneabz3ny6vhi.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-5udzia7oszcihbuh44bedu5wxq"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-pakkalocal-staging-64836-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apipakkalocal"
+      },
+      "lastPushTimeStamp": "2023-08-21T05:05:01.608Z",
+      "lastPushDirHash": "cNCpZR4bA0crWUhpOjfcg790/ro="
+    }
+  }
+}

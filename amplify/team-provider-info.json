@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pakkalocal-staging-64836-authRole",
+      "UnauthRoleArn": "arn:aws:iam::526028915276:role/amplify-pakkalocal-staging-64836-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::526028915276:role/amplify-pakkalocal-staging-64836-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-pakkalocal-staging-64836-deployment",
+      "UnauthRoleName": "amplify-pakkalocal-staging-64836-unauthRole",
+      "StackName": "amplify-pakkalocal-staging-64836",
+      "StackId": "arn:aws:cloudformation:us-east-1:526028915276:stack/amplify-pakkalocal-staging-64836/6c1ac0b0-3e5c-11ee-a133-0e244248268f",
+      "AmplifyAppId": "d2ykklh9zdni7h"
+    },
+    "categories": {
+      "auth": {
+        "pakkalocal": {}
+      }
+    }
+  }
+}
